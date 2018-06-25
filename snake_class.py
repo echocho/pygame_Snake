@@ -22,7 +22,7 @@ FOOD_RANGE_1 = BORDER_THICKNESS
 FOOD_RANGE_2 = BORDER_THICKNESS = SCREEN_HEIGHT - 1.5*BORDER_THICKNESS
 SNAKE_RECT_LEN = 10
 INITIAL_SNAKE_LEN = 200
-
+GAME_TITLE_SIZE = 38
 BLACK = (0, 0, 0)
 GREEN = (20, 255, 140)
 LIGHT_GREY = (210, 210, 210)
@@ -72,12 +72,28 @@ class CollapseChecker:
             self.status = True
 
 
-Manu.game_intro(screen, 'Snake of Simplicity', 28)
+Manu.game_intro(screen, 'Snake of Simplicity', GAME_TITLE_SIZE)
+# Manu.trigger()
+# if Manu.status_start:
+#     # carry_on = True
+#     print('clicked start')
+# elif Manu.status_quit:
+#     pygame.quit()
+#     print('clicked end')
 
 # main game loop
 def main_game_loop():
 
-    carry_on = True
+    # carry_on = True
+    carry_on = None
+
+    # if Manu.status_start:
+    #     carry_on = True
+    #     print('clicked start')
+    # elif Manu.status_quit:
+    #     pygame.quit()
+    #     print('clicked end')
+
     score = 0
 
     Snake.initialize_snake(screen, WHITE, INITIAL_SNAKE_X_POS, INITIAL_SNAKE_Y_POS)
