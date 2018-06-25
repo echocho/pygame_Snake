@@ -3,48 +3,42 @@ pygame.init()
 
 PURPLE = (255, 0, 255)
 GREY = (190, 190, 190)
-# SCREEN_WIDTH = 500
-# SCREEN_HEIGHT = 500
-# BORDER_THICKNESS = 20
+
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 800
+BORDER_THICKNESS = 20
+
 
 class World:
-    def score_cal(self, Surface, score):
+
+    @staticmethod
+    def score_cal(surface, score):
         font = pygame.font.SysFont(None, 20)
         text = font.render("Scores: "+str(score), True, PURPLE)
-        Surface.blit(text, (0,0))
+        surface.blit(text, (0,0))
 
-    def message_display(self, Surface, text):
-        set_textFont = pygame.font.SysFont(None,65)
-        textSurface, textArea = self.text_objects(text, set_textFont)
-        textArea.center = ((SCREEN_WIDTH/2),(SCREEN_HEIGHT/2))
-        Surface.blit(textSurface, textArea)
+    def message_display(self, surface, text):
+        set_text_font = pygame.font.SysFont(None,65)
+        text_surface, text_area = self.text_objects(text, set_text_font)
+        text_area.center = ((SCREEN_WIDTH/2),(SCREEN_HEIGHT/2))
+        Surface.blit(text_surface, text_area)
     
         pygame.display.update()
 
         time.sleep(2)
 
-    def gameOver(self, Surface):
-        self.message_display(Surface, 'Game Over!')
+    def game_over(self, surface):
+        self.message_display(surface, 'Game Over!')
 
-    def text_objects(self, text, font):
-        textSurface = font.render(text, True, GREY)
-        return textSurface, textSurface.get_rect()
+    @staticmethod
+    def text_objects(text, font):
+        text_surface = font.render(text, True, GREY)
+        return text_surface, text_surface.get_rect()
 
-    def draw_border(self, Surface, color, SCREEN_WIDTH, SCREEN_HEIGHT, BORDER_THICKNESS):
-        pygame.draw.rect(Surface, color, [0, 0, SCREEN_WIDTH, BORDER_THICKNESS])
-        pygame.draw.rect(Surface, color, [0, 0, BORDER_THICKNESS, SCREEN_HEIGHT])
-        pygame.draw.rect(Surface, color, [0, SCREEN_HEIGHT - BORDER_THICKNESS, SCREEN_WIDTH, BORDER_THICKNESS])
-        pygame.draw.rect(Surface, color, [SCREEN_WIDTH - BORDER_THICKNESS, 0, BORDER_THICKNESS, SCREEN_HEIGHT])
-    
-    # def borderHitChecker():
-    #     status = False
-    #     (head_x_pos, head_y_pos) = snake.headLocation() 
-    #     if head_x_pos < border_thickness or head_x_pos > screen - border_thickness or head_y_pos < border_thickness or head_y_pos > screen_height - border_thickness:
-    #         world.gameOver
-    #         status = True
-            
-    # def collapseChecker():
-    #     status = False
-    #     if snake.bodyList[-1] in Snake.bodyList[:-1]:
-    #         world.gameOver()
-    #         status = True
+    @staticmethod
+    def draw_border(surface, color, screen_width, screen_height, border_thickness):
+        pygame.draw.rect(surface, color, [0, 0, screen_width, border_thickness])
+        pygame.draw.rect(surface, color, [0, 0, border_thickness, screen_height])
+        pygame.draw.rect(surface, color, [0, screen_height - border_thickness, screen_width, border_thickness])
+        pygame.draw.rect(surface, color, [screen_width - border_thickness, 0, border_thickness, screen_height])
+
