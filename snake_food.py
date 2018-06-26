@@ -38,7 +38,7 @@ class Food:
             self.food_x_pos = random.randint(random_start_range, random_end_range)
             self.food_y_pos = random.randint(random_start_range, random_end_range)
         self.food_list.append((self.food_x_pos, self.food_y_pos))
-        # print(self.food_list)
+        print('self.food_list', self.food_list)
 
         return self.food_list
 

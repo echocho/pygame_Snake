@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c3481e-c61b-4f4d-8ecc-8de20424b9e8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/snake_button.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_button.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pygame_Snake.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pygame_Snake.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snake_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake_food.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_food.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snake_manu.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_manu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake_snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_snake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_world.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,12 +20,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="snake_class.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snake_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="75" column="14" lean-forward="true" selection-start-line="75" selection-start-column="14" selection-end-line="81" selection-end-column="20" />
+            <state relative-caret-position="778">
+              <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -27,8 +33,8 @@
       <file leaf-file-name="snake_button.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snake_button.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="665">
+              <caret line="35" selection-start-line="35" selection-end-line="45" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -36,8 +42,8 @@
       <file leaf-file-name="snake_food.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snake_food.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="760">
+              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -45,8 +51,8 @@
       <file leaf-file-name="snake_manu.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/snake_manu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="-313">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -54,8 +60,8 @@
       <file leaf-file-name="snake_snake.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snake_snake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="888">
+              <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -63,8 +69,8 @@
       <file leaf-file-name="snake_world.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snake_world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            <state relative-caret-position="266">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -82,6 +88,9 @@
       <find>Surface</find>
       <find>blit</find>
       <find>snake</find>
+      <find>BORDER_THICKNESS</find>
+      <find>score</find>
+      <find>update</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,26 +99,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/snake_button.py" />
+        <option value="$PROJECT_DIR$/snake_food.py" />
+        <option value="$PROJECT_DIR$/snake_manu.py" />
         <option value="$PROJECT_DIR$/snake_world.py" />
         <option value="$PROJECT_DIR$/snake_snake.py" />
-        <option value="$PROJECT_DIR$/snake_food.py" />
-        <option value="$PROJECT_DIR$/snake_button.py" />
-        <option value="$PROJECT_DIR$/snake_manu.py" />
         <option value="$PROJECT_DIR$/snake_class.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="80" />
-    <option name="y" value="23" />
-    <option name="width" value="1305" />
-    <option name="height" value="813" />
+    <option name="x" value="-120" />
+    <option name="y" value="-1415" />
+    <option name="width" value="1681" />
+    <option name="height" value="1415" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,7 +131,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,37 +222,37 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="23" width="1305" height="813" extended-state="0" />
+    <frame x="-120" y="-1415" width="1681" height="1415" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15184484" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32962137" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14457831" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32176235" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.20873427" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39940608" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32962137" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15184484" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15184484" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.32962137" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.18754864" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39940608" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32962137" />
       <window_info anchor="bottom" id="Python Console" order="0" />
     </layout-to-restore>
@@ -253,28 +262,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/snake.py">
+    <entry file="file://$PROJECT_DIR$/snake_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="257" column="46" selection-start-line="257" selection-start-column="46" selection-end-line="257" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snake_snake.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snake_world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        <state relative-caret-position="1425">
+          <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="81" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -292,17 +287,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snake_class.py">
+    <entry file="file://$PROJECT_DIR$/snake_snake.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="75" column="14" lean-forward="true" selection-start-line="75" selection-start-column="14" selection-end-line="81" selection-end-column="20" />
+        <state relative-caret-position="475">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake_world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/snake_manu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="1653">
           <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="257" column="46" selection-start-line="257" selection-start-column="46" selection-end-line="257" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake_world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake_snake.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake_button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" selection-start-line="35" selection-end-line="45" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake_food.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake_manu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-313">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

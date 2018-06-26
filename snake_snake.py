@@ -16,6 +16,8 @@ class Snake:
     def extend_body(self, x, y):
         self.body_list = [(x,y)] + self.body_list
         self.body_list.pop(0)
+        print('self.body_list', self.body_list)
+        print('len of self.body_list', self.body_list)
 
     def body_list(self):
         return self.body_list
@@ -27,15 +29,10 @@ class Snake:
         while ini_x_pos + SNAKE_RECT_LEN <= INITIAL_SNAKE_LEN:
             self.body_list.append((ini_x_pos, ini_y_pos))
             ini_x_pos += SNAKE_RECT_LEN
-        # pygame.display.update()
-        # clock.tick(35)
 
     def draw_snake(self, surface, color):
         for (x, y) in self.body_list:
             pygame.draw.rect(surface, color, [x, y, SNAKE_RECT_LEN, SNAKE_RECT_LEN])
-        
-        pygame.display.update()
-        clock.tick(35)
 
     def move(self):
         global direction_vector

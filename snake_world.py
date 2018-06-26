@@ -1,12 +1,18 @@
 import pygame, time
+
 pygame.init()
 
+# -------------------
+# -------------------
+# CUSTOMIZED AREA
 PURPLE = (255, 0, 255)
 GREY = (190, 190, 190)
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 800
 BORDER_THICKNESS = 20
+# -------------------
+# -------------------
 
 
 class World:
@@ -21,7 +27,7 @@ class World:
         set_text_font = pygame.font.SysFont(None,65)
         text_surface, text_area = self.text_objects(text, set_text_font)
         text_area.center = ((SCREEN_WIDTH/2),(SCREEN_HEIGHT/2))
-        Surface.blit(text_surface, text_area)
+        surface.blit(text_surface, text_area)
     
         pygame.display.update()
 
