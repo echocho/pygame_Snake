@@ -12,12 +12,12 @@ class Snake:
 
     def __init__(self):
         self.body_list = []
+        (self.pop_x, self.pop_y) = (0, 0)
 
     def extend_body(self, x, y):
-        self.body_list = [(x,y)] + self.body_list
-        self.body_list.pop(0)
-        print('self.body_list', self.body_list)
-        print('len of self.body_list', self.body_list)
+        self.body_list = [(self.pop_x, self.pop_y)] + self.body_list
+        # print('self.body_list', self.body_list)
+        # print('len of self.body_list', self.body_list)
 
     def body_list(self):
         return self.body_list
@@ -45,4 +45,4 @@ class Snake:
             direction_vector = new_direction_vector 
 
         self.body_list.append((head_x_pos + direction_vector[0] * SPEED, head_y_pos + direction_vector[1] * SPEED))
-        self.body_list.pop(0)
+        (self.pop_x, self.pop_y) = self.body_list.pop(0)

@@ -59,7 +59,7 @@ class BorderHitChecker:
         # print('border thickness', BORDER_THICKNESS)
         if head_x_pos < BORDER_THICKNESS or head_x_pos > SCREEN_WIDTH - BORDER_THICKNESS or head_y_pos < BORDER_THICKNESS or head_y_pos > SCREEN_HEIGHT - BORDER_THICKNESS:
             World.game_over(screen)
-            # print('hit border')
+            print('hit border')
             self.status = True
 
 
@@ -73,6 +73,8 @@ class CollapseChecker:
             World.game_over(screen)
             print('Collapse with itself')
             print('Snake.bodyList', Snake.body_list)
+            print(Snake.body_list[-1])
+            print(Snake.body_list[:-1])
             self.status = True
 
 
@@ -116,14 +118,19 @@ def main_game_loop():
         print('Snake.body_list', Snake.body_list)
         print('len of Snake.body_list', len(Snake.body_list))
 
-        if snake_x >= food_x and snake_x + SNAKE_RECT_LEN >= food_x + foodRectSize:
+        # if snake_x >= food_x and snake_x + SNAKE_RECT_LEN >= food_x + foodRectSize:
+        if snake_x == food_x and snake_y == food_y:
             print('----------------yes food in bodylist------------------')
             Snake.extend_body(food_x, food_y)
             Food.generate_food(FOOD_RANGE_1, FOOD_RANGE_2)
+            score += 1
+            print('--------------------------------------score------------------')
+            print(score)
+            World.score_cal(screen, score) # added
 
         Food.draw_food(screen)
 
-        World.score_cal(screen, score)
+        # World.score_cal(screen, score)
 
         Snake.draw_snake(screen, WHITE)
 
