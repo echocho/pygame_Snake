@@ -35,7 +35,7 @@ class Food:
 
         self.food_x_pos = random.randint(random_start_range, random_end_range)
         self.food_y_pos = random.randint(random_start_range, random_end_range)
-        # self.food_x_pos, self.food_y_pos = random.randint(random_start_range, random_end_range), random.randint(random_start_range, random_end_range)
+
         while self.food_x_pos % divider != 0 or self.food_y_pos % divider != 0:
             self.food_x_pos = random.randint(random_start_range, random_end_range)
             self.food_y_pos = random.randint(random_start_range, random_end_range)

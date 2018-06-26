@@ -19,7 +19,7 @@ class World:
 
     @staticmethod
     def score_cal(surface, score):
-        font = pygame.font.SysFont(None, 20)
+        font = pygame.font.SysFont(None, 25)
         text = font.render("Scores: "+str(score), True, PURPLE)
         surface.blit(text, (0,0))
 

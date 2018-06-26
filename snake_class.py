@@ -73,8 +73,8 @@ class CollapseChecker:
             World.game_over(screen)
             print('Collapse with itself')
             print('Snake.bodyList', Snake.body_list)
-            print(Snake.body_list[-1])
-            print(Snake.body_list[:-1])
+            # print(Snake.body_list[-1])
+            # print(Snake.body_list[:-1])
             self.status = True
 
 
@@ -108,6 +108,10 @@ def main_game_loop():
         # draw border
         World.draw_border(screen, GREEN, SCREEN_WIDTH, SCREEN_HEIGHT, BORDER_THICKNESS)
 
+        World.score_cal(screen, score)
+
+        Snake.draw_snake(screen, WHITE)
+
         Snake.move()
 
         # check if snake eats the food and then generate new food:
@@ -130,11 +134,6 @@ def main_game_loop():
 
         Food.draw_food(screen)
 
-        # World.score_cal(screen, score)
-
-        Snake.draw_snake(screen, WHITE)
-
-        # check if snake hits border
         BorderHitChecker().check()
         if BorderHitChecker().status:
             carry_on = False
@@ -144,7 +143,7 @@ def main_game_loop():
             carry_on = False
 
         pygame.display.update()
-        clock.tick(50)
+        clock.tick(60)
 
 
 main_game_loop()
