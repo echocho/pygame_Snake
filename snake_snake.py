@@ -3,7 +3,7 @@ pygame.init()
 
 clock = pygame.time.Clock()
 SNAKE_RECT_LEN = 10
-INITIAL_SNAKE_LEN = 200
+INITIAL_SNAKE_LEN = 300
 SPEED = 5
 direction_vector = (1, 0)
 
