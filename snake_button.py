@@ -1,4 +1,4 @@
-import pygame, random
+import pygame
 
 pygame.init()
 pygame.font.init()
@@ -10,7 +10,6 @@ class Button:
 
     def __init__(self, name):
         self.banner = name
-        self.status = None
 
     @staticmethod
     def text_objects(text, font, color):
@@ -32,15 +31,3 @@ class Button:
         text_surface, text_area = self.text_objects(self.banner, set_text_font, color)
         text_area.center = (x_pos+(width/2), (y_pos + height/2))
         surface.blit(text_surface, text_area)
-    
-    def add_trigger(self, x_pos, y_pos, width, height):
-        mouse = pygame.mouse.get_pos()
-        click = pygame.mouse.get_pressed()
-        if x_pos + width > mouse[0] > x_pos and y_pos + height > mouse[1] > y_pos:
-            if click[0] == 1:
-                if self.banner == 'PLAY':
-                    print('click start')
-                    self.status = 'start'
-                if self.banner == 'QUIT':
-                    print('click quit')
-                    self.status = 'end'
