@@ -60,40 +60,13 @@ class Manu:
 
             if self.start_x + self.start_w > mouse[0] > self.start_x and self.start_y + self.start_h > mouse[1] > self.start_y:
                 if click[0] == 1:
-                    print('click start')
                     self.status_start = True
                     self.manu_end = True
 
             elif self.quit_x + self.quit_w > mouse[0] > self.quit_x and self.quit_y + self.quit_h > mouse[1] > self.quit_y:
                 if click[0] == 1:
-                    print('click quit')
                     self.status_quit = True
                     self.manu_end = True
 
             pygame.display.update()
             clock.tick(15)
-
-    # def trigger(self):
-    #     print('enter trigger()')
-    #     mouse = pygame.mouse.get_pos()
-    #     click = pygame.mouse.get_pressed()
-    #
-    #     if self.start_x + self.start_w > mouse[0] > self.start_x and self.start_y + self.start_h > mouse[1] > self.start_y:
-    #         if click[0] == 1:
-    #             print('click start')
-    #             self.status_start = True
-    #             self.manu_end = True # added
-    #         return self.status_start
-    #     elif self.quit_x + self.quit_w > mouse[0] > self.quit_x and self.quit_y + self.quit_h > mouse[1] > self.quit_y:
-    #         if click[0] == 1:
-    #             self.status_quit = True
-    #             self.manu_end = True # added
-    #         return self.status_quit
-    #
-    #
-    #     pygame.display.update()
-    #     clock.tick(15)
-
-
-
-
