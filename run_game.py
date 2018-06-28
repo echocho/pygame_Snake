@@ -51,8 +51,6 @@ clock = pygame.time.Clock()
 
 def hit_border():
     (head_x_pos, head_y_pos) = Snake.head_location()
-    # print('head_x_pos, head_y_pos', head_x_pos, head_y_pos)
-    # print('border thickness', BORDER_THICKNESS)
     if head_x_pos < BORDER_THICKNESS or head_x_pos > SCREEN_WIDTH - BORDER_THICKNESS or head_y_pos < BORDER_THICKNESS or head_y_pos > SCREEN_HEIGHT - BORDER_THICKNESS:
         print('hit border')
         return True
@@ -62,26 +60,27 @@ def hit_border():
 def collapse_itself():
     if Snake.body_list[-1] in Snake.body_list[:-1]:
         print('Collapse with itself')
-        # print('Snake.bodyList', Snake.body_list)
-        # print(Snake.body_list[-1])
-        # print(Snake.body_list[:-1])
         return True
     return False
 
-# -------------------- to be fixed
+
 def restart():
+    # reset variables to default
+    Snake.reset()
+    Food.reset()
+
     Manu.game_intro(screen, 'Snake of Simplicity', GAME_TITLE_SIZE)
+
     if Manu.status_quit:
         pygame.quit()
     main_game_loop()
-# ------------------- to be fixed
+
 
 Manu.game_intro(screen, 'Snake of Simplicity', GAME_TITLE_SIZE)
 if Manu.status_quit:
     pygame.quit()
 
 
-# main game loop
 def main_game_loop():
 
     # carry_on = True
@@ -90,10 +89,8 @@ def main_game_loop():
 
     Snake.initialize_snake(screen, WHITE, INITIAL_SNAKE_X_POS, INITIAL_SNAKE_Y_POS)
     Food.initialize_food(FOOD_RANGE_1, FOOD_RANGE_2)
-    # print('Food.food_list', Food.food_list)
 
     if Manu.status_start:
-        # print('yes!')
         carry_on = True
 
     while carry_on:
@@ -103,8 +100,7 @@ def main_game_loop():
 
         screen.fill(BLACK)
 
-        # draw border
-        World.draw_border(screen, GREEN, SCREEN_WIDTH, SCREEN_HEIGHT, BORDER_THICKNESS)
+        World.draw_border(screen, WHITE, SCREEN_WIDTH, SCREEN_HEIGHT, BORDER_THICKNESS)
 
         World.score_cal(screen, score)
 
@@ -115,33 +111,20 @@ def main_game_loop():
         # check if snake eats the food and then generate new food:
         food_x, food_y = Food.current_location()
         snake_x, snake_y = Snake.head_location()
-        # print('(food_x, food_y)', (food_x, food_y))
-        # print('(snake_x, snake_y)', (snake_x, snake_y))
-        # print('Snake.body_list', Snake.body_list)
-        # print('len of Snake.body_list', len(Snake.body_list))
 
-        # if snake_x >= food_x and snake_x + SNAKE_RECT_LEN >= food_x + foodRectSize:
         if snake_x == food_x and snake_y == food_y:
-            # print('----------------yes food in bodylist------------------')
             Snake.extend_body(food_x, food_y)
             Food.generate_food(FOOD_RANGE_1, FOOD_RANGE_2)
             score += 1
-            # print('--------------------------------------score------------------')
-            print(score)
-            World.score_cal(screen, score) # added
+
+            World.score_cal(screen, score)
 
         Food.draw_food(screen)
 
-
-# -------------------- to be fixed
         if hit_border() or collapse_itself():
             World.game_over(screen)
-            carry_on = False
+
             restart()
-            print('carry_on is false now')
-
-# -------------------- to be fixed
-
 
         pygame.display.update()
         clock.tick(60)
