@@ -7,6 +7,7 @@ pygame.init()
 # CUSTOMIZED AREA
 PURPLE = (255, 0, 255)
 GREY = (190, 190, 190)
+BLACK = (0, 0, 0)
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 800
@@ -20,7 +21,7 @@ class World:
     @staticmethod
     def score_cal(surface, score):
         font = pygame.font.SysFont(None, 25)
-        text = font.render("Scores: "+str(score), True, PURPLE)
+        text = font.render("Scores: "+str(score), True, BLACK)
         surface.blit(text, (0,0))
 
     def message_display(self, surface, text):
