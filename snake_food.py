@@ -1,7 +1,7 @@
 import pygame, random
 pygame.init()
 
-RED = (255, 0, 0)
+GREY = (190, 190, 190)
 
 
 class Food:
@@ -10,7 +10,7 @@ class Food:
 
     def __init__(self):
         self.food_list = []
-        self.color = RED
+        self.color = GREY
         self.food_x_pos = None
         self.food_y_pos = None
 
@@ -40,10 +40,15 @@ class Food:
             self.food_x_pos = random.randint(random_start_range, random_end_range)
             self.food_y_pos = random.randint(random_start_range, random_end_range)
         self.food_list.append((self.food_x_pos, self.food_y_pos))
-        print('self.food_list', self.food_list)
 
         return self.food_list
 
     def draw_food(self, surface):
         pygame.draw.rect(surface, self.color, [self.food_list[0][0], self.food_list[0][1], self.foodRectSize, self.foodRectSize])
         pygame.display.update()
+
+    def reset(self):
+        self.food_list = []
+        self.color = GREY
+        self.food_x_pos = None
+        self.food_y_pos = None
